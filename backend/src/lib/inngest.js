@@ -24,7 +24,9 @@ const syncUser = inngest.createFunction(
             id:newUser.clerkId.toString(),
             name: newUser.name,
             image:newUser.profileImage
-        })
+        });
+
+        //challenge: send a welcome email here later -once  i complete
 
     }
 )

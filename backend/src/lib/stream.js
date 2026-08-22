@@ -7,7 +7,8 @@ const apiSecret = ENV.STREAM_API_SECRET
 if(!apiKey || !apiSecret){
     console.error("STREAM_API_KEY or STREAM_API_SECRET is missing")
 }
-export const chatClient = StreamChat.getInstance(apiKey,apiSecret);
+export const streamClient =  StreamChat.getInstance(apiKey,apiSecret);//will be used for video calls
+export const chatClient = StreamChat.getInstance(apiKey,apiSecret);//will be used for chat features
 
 export const upsertStreamUser = async(userData) =>{
     try{
